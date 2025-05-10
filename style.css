@@ -10,9 +10,17 @@ body {
 }
 
 @keyframes gradientBG {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 .container {
@@ -39,6 +47,7 @@ input {
 input::placeholder {
     color: #aaa;
 }
+
 input:focus {
     border-color: #007bff;
     box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
@@ -62,6 +71,7 @@ button:hover {
     box-shadow: 0 0 15px #00ffff;
     transform: scale(1.05);
 }
+
 a {
     color: #00ffff;
     text-decoration: none;
@@ -71,7 +81,7 @@ a:hover {
     color: #007bff;
 }
 
-p{
+p {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 400;
 }
@@ -101,12 +111,12 @@ p{
     .container {
         padding: 30px;
     }
-    
+
     input {
         padding: 14px;
         font-size: 17px;
     }
-    
+
     button {
         padding: 14px;
         font-size: 17px;
@@ -119,12 +129,12 @@ p{
         max-width: 400px;
         padding: 35px;
     }
-    
+
     input {
         padding: 15px;
         margin: 12px 0;
     }
-    
+
     button {
         padding: 15px;
     }
@@ -136,9 +146,20 @@ p{
         width: 95%;
         padding: 20px;
     }
-    
-    input, button {
+
+    input,
+    button {
         padding: 10px;
         font-size: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .password-container {
+        width: 102%;
+    }
+
+    button {
+        width: 102%;
     }
 }
